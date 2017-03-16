@@ -15,6 +15,8 @@
             <p class="excerpt">
                 <?php echo $project->post_excerpt;?>
             </p>
+            <a href="<?php echo get_permalink($project);?>"><?php
+                echo __('Read more about this project', 'troja');?></a>
         </div>
     </div>
 
