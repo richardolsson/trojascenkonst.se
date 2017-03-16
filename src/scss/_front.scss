@@ -1,26 +1,37 @@
 .front {
     .news {
         .news-item {
+            @include clear-fix;
+
             display: block;
             padding: 1em;
             color: white;
+            text-decoration: none;
 
-            &:after {
-                content: "";
-                display: block;
-                clear: both;
-            }
+            transition: background-color 0.2s;
 
             &:nth-child(1) {
                 background-color: $c-ui-col0;
+
+                &:hover {
+                    background-color: $c-ui-col0-light;
+                }
             }
 
             &:nth-child(2) {
                 background-color: $c-ui-col1;
+
+                &:hover {
+                    background-color: $c-ui-col1-light;
+                }
             }
 
             &:nth-child(3) {
                 background-color: $c-ui-col2;
+
+                &:hover {
+                    background-color: $c-ui-col2-light;
+                }
             }
 
             .date {
@@ -30,12 +41,48 @@
                 font-size: 1.1em;
             }
 
-            h3 {
+            .title {
                 margin: 0;
                 display: block;
                 width: 70%;
                 float: left;
                 font-size: 1.2em;
+            }
+        }
+
+        @include medium-screen {
+            @include clear-fix;
+
+            .news-item {
+                float: left;
+                box-sizing: border-box;
+                height: 12em;
+
+                &:nth-child(1) {
+                    width: 33%;
+                }
+
+                &:nth-child(2) {
+                    width: 34%;
+                }
+
+                &:nth-child(3) {
+                    width: 33%;
+                }
+
+                .date {
+                    float: none;
+                    width: auto;
+                }
+
+                .title {
+                    float: none;
+                    width: auto;
+                    font-size: 1.8em;
+                    line-height: 1.3em;
+                    font-family: "Taviraj", serif;
+                    font-style: italic;
+                }
             }
         }
     }

@@ -1,3 +1,10 @@
+$medium-width: 719px;
+$large-width: 1023px;
+
 $c-ui-col0: #437899;
 $c-ui-col1: #7100fb;
 $c-ui-col2: #00b28e;
+
+$c-ui-col0-light: lighten($c-ui-col0, 5);
+$c-ui-col1-light: lighten($c-ui-col1, 5);
+$c-ui-col2-light: lighten($c-ui-col2, 5);

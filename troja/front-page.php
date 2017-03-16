@@ -29,7 +29,7 @@
         <?php foreach ($news as $post):?>
             <a href="<?php echo get_permalink($post);?>" class="news-item">
                 <small class="date"><?php echo get_the_date(null, $post->ID);?></small>
-                <h3><?php echo $post->post_title;?></h3>
+                <h3 class="title"><?php echo $post->post_title;?></h3>
             </a>
         <?php endforeach; ?>
         </div>
