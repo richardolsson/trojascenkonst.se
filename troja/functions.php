@@ -16,6 +16,7 @@ function troja_register_post_types() {
         'supports' => array(
             'title',
             'editor',
+            'excerpt',
             'thumbnail'
         ),
         'public' => true,

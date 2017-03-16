@@ -1,0 +1,45 @@
+.front {
+    .project {
+        position: relative;
+        height: 400px;
+        height: 60vw;
+
+        background-position: center center;
+        background-size: cover;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+            background: linear-gradient(
+                15deg,
+                rgba(0,0,0,0.8) 0%,
+                rgba(0,0,0,0) 60%
+            );
+        }
+
+        .project-meta {
+            width: 70%;
+            position: absolute;
+            bottom: 1em;
+            left: 1em;
+
+            color: white;
+
+            h2 {
+                font-size: 2em;
+                margin: 0;
+            }
+
+            p {
+                font-size: 1.2em;
+                margin: 0;
+            }
+        }
+    }
+}
