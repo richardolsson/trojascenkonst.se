@@ -9,6 +9,6 @@
     <body>
         <div class="page">
             <div class="header">
-                <img class="logo" alt="Troja Scenkonst"
-                    src="<?php echo get_template_directory_uri();?>/images/logo.png">
+                <a href="/"><img class="logo" alt="Troja Scenkonst"
+                    src="<?php echo get_template_directory_uri();?>/images/logo.png"></a>
             </div>
