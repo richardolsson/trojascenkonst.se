@@ -1,4 +1,45 @@
 .front {
+    .news {
+        .news-item {
+            display: block;
+            padding: 1em;
+            color: white;
+
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            &:nth-child(1) {
+                background-color: $c-ui-col0;
+            }
+
+            &:nth-child(2) {
+                background-color: $c-ui-col1;
+            }
+
+            &:nth-child(3) {
+                background-color: $c-ui-col2;
+            }
+
+            .date {
+                display: block;
+                width: 30%;
+                float: left;
+                font-size: 1.1em;
+            }
+
+            h3 {
+                margin: 0;
+                display: block;
+                width: 70%;
+                float: left;
+                font-size: 1.2em;
+            }
+        }
+    }
+
     .project {
         position: relative;
         height: 400px;
