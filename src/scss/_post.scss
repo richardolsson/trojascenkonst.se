@@ -1,4 +1,11 @@
 .post {
     max-width: 1000px;
     margin: 4em auto;
+
+    .post-image {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
 }
