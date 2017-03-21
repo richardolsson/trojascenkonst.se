@@ -6,6 +6,7 @@ function troja_init() {
 
     troja_register_post_types();
     troja_register_nav_menus();
+    troja_register_fields();
 }
 
 function troja_register_post_types() {
@@ -29,4 +30,8 @@ function troja_register_nav_menus() {
     register_nav_menus(array(
         'header-menu' => __('Header menu', 'troja'),
     ));
+}
+
+function troja_register_fields() {
+    require('fields/project.php');
 }

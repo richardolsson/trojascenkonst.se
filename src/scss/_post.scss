@@ -8,4 +8,32 @@
             height: auto;
         }
     }
+
+    .project-credits {
+        h3 {
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        dl {
+            @include clear-fix;
+
+            font-size: 0.9em;
+            text-transform: uppercase;
+
+            dt {
+                float: left;
+                clear: left;
+                margin: 0;
+                font-weight: bold;
+                font-size: inherit;
+            }
+
+            dd {
+                float: left;
+                margin: 0 0 0 1em;
+                font-size: inherit;
+            }
+        }
+    }
 }
