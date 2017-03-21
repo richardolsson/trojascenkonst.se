@@ -5,6 +5,7 @@ function troja_init() {
     add_theme_support('post-thumbnails');
 
     troja_register_post_types();
+    troja_register_nav_menus();
 }
 
 function troja_register_post_types() {
@@ -21,5 +22,11 @@ function troja_register_post_types() {
         ),
         'public' => true,
         'has_archive' => false,
+    ));
+}
+
+function troja_register_nav_menus() {
+    register_nav_menus(array(
+        'header-menu' => __('Header menu', 'troja'),
     ));
 }

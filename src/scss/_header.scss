@@ -1,7 +1,42 @@
 .header {
     margin: 1em 0;
+    @include clear-fix;
 
     .logo {
         max-width: 50%;
+    }
+
+    .menu {
+        text-align: center;
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0 0.6em;
+            display: inline-block;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2em;
+
+            &:hover {
+                color: $c-ui-col0;
+            }
+        }
+    }
+
+    @include medium-screen {
+        margin: 1em 0 2em;
+
+        .menu {
+            text-align: right;
+            float: right;
+            font-size: 1.3em;
+            margin: 1.5em 0 0;
+        }
     }
 }
