@@ -18,7 +18,6 @@
         dl {
             @include clear-fix;
 
-            font-size: 0.9em;
             text-transform: uppercase;
 
             dt {
@@ -50,6 +49,61 @@
                     max-width: 10em;
                     height: auto;
                 }
+            }
+        }
+    }
+
+    .project-sponsors, .project-credits {
+        margin: 1em 0;
+        padding: 1em 0;
+        border-top: 1px solid black;
+    }
+
+
+    @include medium-screen {
+        .post-content {
+            p {
+                margin-left: 30%;
+            }
+
+            blockquote {
+                float: left;
+                width: 27%;
+                margin: 0;
+
+                font-size: 1.3em;
+                font-family: "Taviraj", serif;
+                font-style: italic;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .project-media {
+            .project-media-item {
+                width: 90%;
+
+                &:nth-child(odd) {
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        .project-sponsors, .project-credits {
+            @include clear-fix;
+
+            h2 {
+                float: left;
+                font-size: 1.3em;
+                width: 30%;
+            }
+
+            ul, .project-credits-lists {
+                display: block;
+                float: left;
+                width: 70%;
             }
         }
     }
