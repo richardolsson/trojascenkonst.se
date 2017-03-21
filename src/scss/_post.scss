@@ -36,4 +36,21 @@
             }
         }
     }
+
+    .project-sponsors {
+        ul {
+            @include list-reset;
+            @include clear-fix;
+
+            li {
+                float: left;
+                margin: 1em 2em;
+
+                img {
+                    max-width: 10em;
+                    height: auto;
+                }
+            }
+        }
+    }
 }

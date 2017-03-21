@@ -6,6 +6,17 @@
     }
 }
 
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @mixin medium-screen {
   @media (min-width: #{$medium-width}) {
     @content;

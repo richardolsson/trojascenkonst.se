@@ -22,6 +22,7 @@
     <?php endif;?>
     <?php if (have_rows('project_credits')): ?>
     <div class="project-credits">
+        <h2><?php echo __('Project credits', 'troja');?></h2>
     <?php while (have_rows('project_credits')): the_row(); ?>
         <div class="post-credits-list">
             <h3><?php the_sub_field('project_credits_list_title');?></h3>
@@ -35,5 +36,15 @@
     <?php endwhile; ?>
     </div>
     <?php endif; ?>
+    <?php if (have_rows('project_sponsors')): ?>
+    <div class="project-sponsors">
+        <h2><?php echo __('Project sponsors', 'troja');?></h2>
+        <ul>
+        <?php while (have_rows('project_sponsors')): the_row();?>
+            <li><img src="<?php the_sub_field('project_sponsors_logo_image');?>"></li>
+        <?php endwhile;?>
+        </ul>
+    </div>
+    <?php endif;?>
 </div>
 <?php get_footer();?>
