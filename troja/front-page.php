@@ -7,7 +7,7 @@
 ?>
 <div class="content front">
 <?php foreach ($projects as $project):
-    $img_src = get_the_post_thumbnail_url($project);
+    $img_src = get_the_post_thumbnail_url($project, 'project_wide');
 ?>
     <div class="project" style="background-image: url(<?php echo $img_src ?>)">
         <div class="project-meta">

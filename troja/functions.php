@@ -4,9 +4,14 @@ add_action('init', 'troja_init');
 function troja_init() {
     add_theme_support('post-thumbnails');
 
+    troja_register_image_sizes();
     troja_register_post_types();
     troja_register_nav_menus();
     troja_register_fields();
+}
+
+function troja_register_image_sizes() {
+    add_image_size('project_wide', 1500, 750, array('center', 'center'));
 }
 
 function troja_register_post_types() {
