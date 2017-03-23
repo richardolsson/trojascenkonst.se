@@ -9,6 +9,15 @@
         }
     }
 
+    .project-kicker {
+        font-size: 1.8em;
+    }
+
+    .project-caption {
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+
     .project-credits {
         h3 {
             font-size: 1.2em;
@@ -61,14 +70,24 @@
 
 
     @include medium-screen {
+        .post-meta {
+            float: left;
+            width: 32%;
+
+            .project-kicker {
+                font-size: 1.8em;
+                margin: 0;
+            }
+        }
+
         .post-content {
             p {
-                margin-left: 30%;
+                margin-left: 35%;
             }
 
             blockquote {
                 float: left;
-                width: 27%;
+                width: 32%;
                 margin: 0;
 
                 font-size: 1.3em;

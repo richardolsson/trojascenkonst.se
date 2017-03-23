@@ -5,6 +5,14 @@
         <?php the_post_thumbnail();?>
     </div>
     <h1><?php the_title();?></h1>
+    <div class="post-meta">
+        <p class="project-kicker">
+            <?php the_field('project_meta_kicker'); ?>
+        </p>
+        <p class="project-caption">
+            <?php the_field('project_meta_caption'); ?>
+        </p>
+    </div>
     <div class="post-content">
         <?php the_content(); ?>
     </div>
