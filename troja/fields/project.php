@@ -2,47 +2,6 @@
 
 if( function_exists('acf_add_local_field_group') ):
 
-register_field_group(array(
-    'key' => 'project_meta',
-    'title' => __('Project meta', 'troja'),
-    'fields' => array(
-        array(
-            'key' => 'project_meta_kicker',
-            'label' => __('Kicker', 'troja'),
-            'name' => 'kicker',
-            'type' => 'textarea',
-        ),
-        array(
-            'key' => 'project_meta_caption',
-            'label' => __('Caption', 'troja'),
-            'name' => 'caption',
-            'type' => 'text',
-        ),
-    ),
-    'location' => array (
-        array (
-            array (
-                'param' => 'post_type',
-                'operator' => '==',
-                'value' => 'project',
-            ),
-        ),
-    ),
-    'menu_order' => 0,
-    'position' => 'acf_after_title',
-    'style' => 'seamless',
-    'label_placement' => 'top',
-    'instruction_placement' => 'label',
-    'hide_on_screen' => array (
-        0 => 'custom_fields',
-        1 => 'discussion',
-        2 => 'comments',
-        3 => 'format',
-        4 => 'page_attributes',
-        5 => 'send-trackbacks',
-    ),
-));
-
 register_field_group(array (
     'key' => 'project_media_and_credits',
     'title' => __('Project media and credits', 'troja'),

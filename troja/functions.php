@@ -38,5 +38,6 @@ function troja_register_nav_menus() {
 }
 
 function troja_register_fields() {
+    require('fields/post.php');
     require('fields/project.php');
 }

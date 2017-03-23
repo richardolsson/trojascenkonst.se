@@ -6,11 +6,11 @@
     </div>
     <h1><?php the_title();?></h1>
     <div class="post-meta">
-        <p class="project-kicker">
-            <?php the_field('project_meta_kicker'); ?>
+        <p class="post-kicker">
+            <?php the_field('post_meta_kicker'); ?>
         </p>
-        <p class="project-caption">
-            <?php the_field('project_meta_caption'); ?>
+        <p class="post-caption">
+            <?php the_field('post_meta_caption'); ?>
         </p>
     </div>
     <div class="post-content">
