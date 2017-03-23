@@ -23,6 +23,14 @@ p {
     font-size: 1.5em;
 }
 
+a {
+    color: $c-ui-col0;
+
+    &:hover {
+        color: $c-ui-col0-light;
+    }
+}
+
 img {
     max-width: 100%;
     height: auto;
