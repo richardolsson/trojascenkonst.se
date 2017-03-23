@@ -22,26 +22,25 @@
 
     .project-credits {
         h3 {
-            font-size: 1.2em;
+            margin-top: 0;
+            font-size: inherit;
             text-transform: uppercase;
         }
 
-        dl {
-            @include clear-fix;
+        ul {
+            @include list-reset;
 
             text-transform: uppercase;
 
-            dt {
-                float: left;
-                clear: left;
+            .role {
                 margin: 0;
-                font-weight: bold;
+                font-weight: 700;
                 font-size: inherit;
             }
 
-            dd {
-                float: left;
-                margin: 0 0 0 1em;
+            .names {
+                margin: 0 0 0 0.3em;
+                font-weight: 300;
                 font-size: inherit;
             }
         }
@@ -68,6 +67,12 @@
         margin: 1em 0;
         padding: 1em 0;
         border-top: 1px solid black;
+        font-size: 1.1em;
+
+        h2 {
+            font-weight: normal;
+            font-size: 1.3em;
+        }
     }
 
 
@@ -116,12 +121,12 @@
             @include clear-fix;
 
             h2 {
+                margin-top: 0;
                 float: left;
-                font-size: 1.3em;
                 width: 30%;
             }
 
-            ul, .project-credits-lists {
+            .project-sponsor-list, .project-credits-lists {
                 display: block;
                 float: left;
                 width: 70%;
@@ -130,6 +135,10 @@
 
         .project-credits-lists {
             columns: 2;
+
+            .project-credits-list {
+                break-inside: avoid;
+            }
         }
     }
 }

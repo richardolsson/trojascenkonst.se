@@ -35,12 +35,18 @@
         <?php while (have_rows('project_credits')): the_row(); ?>
             <div class="project-credits-list">
                 <h3><?php the_sub_field('project_credits_list_title');?></h3>
-                <dl>
+                <ul>
                 <?php while (have_rows('project_credits_list_items')): the_row();?>
-                    <dt><?php the_sub_field('project_credits_list_items_item_role');?></dt>
-                    <dd><?php the_sub_field('project_credits_list_items_item_name');?></dd>
+                    <li>
+                        <span class="role">
+                            <?php the_sub_field('project_credits_list_items_item_role');?>
+                        </span>
+                        <span class="names">
+                            <?php the_sub_field('project_credits_list_items_item_name');?>
+                        </span>
+                    </li>
                 <?php endwhile;?>
-                </dl>
+                </ul>
             </div>
         <?php endwhile; ?>
         </div>
@@ -49,7 +55,7 @@
     <?php if (have_rows('project_sponsors')): ?>
     <div class="project-sponsors">
         <h2><?php echo __('Project sponsors', 'troja');?></h2>
-        <ul>
+        <ul class="project-sponsor-list">
         <?php while (have_rows('project_sponsors')): the_row();?>
             <li><img src="<?php the_sub_field('project_sponsors_logo_image');?>"></li>
         <?php endwhile;?>
