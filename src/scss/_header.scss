@@ -1,9 +1,9 @@
 .header {
-    margin: 1em 0;
+    margin: 1em;
     @include clear-fix;
 
     .logo {
-        max-width: 50%;
+        max-width: 300px;
     }
 
     .menu {
@@ -35,8 +35,8 @@
         .menu {
             text-align: right;
             float: right;
-            font-size: 1.3em;
-            margin: 1.5em 0 0;
+            font-size: 1.1em;
+            margin: 1em 0 0;
         }
     }
 }

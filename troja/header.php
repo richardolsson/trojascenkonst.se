@@ -7,7 +7,7 @@
         <link rel="icon" href="<?php echo get_template_directory_uri();?>/images/favicon.png">
         <meta name="viewport" content="width=device-width">
     </head>
-    <body>
+    <body <?php body_class();?>>
         <div class="page">
             <div class="header">
                 <a href="/"><img class="logo" alt="Troja Scenkonst"

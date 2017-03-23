@@ -5,7 +5,7 @@
         'post_type' => 'project',
     ));
 ?>
-<div class="content front">
+<div class="content">
 <?php foreach ($projects as $project):
     $img_src = get_the_post_thumbnail_url($project, 'project_wide');
 ?>
