@@ -35,8 +35,9 @@
             </a>
         <?php endforeach; ?>
         </div>
-
+        <div class="projects">
     <?php endif;?>
 <?php endforeach;?>
+    </div>
 </div>
 <?php get_footer();?>
