@@ -244,14 +244,12 @@ register_field_group(array (
     'label_placement' => 'top',
     'instruction_placement' => 'label',
     'hide_on_screen' => array (
-        0 => 'excerpt',
-        1 => 'custom_fields',
-        2 => 'discussion',
-        3 => 'comments',
-        4 => 'format',
-        5 => 'page_attributes',
-        6 => 'featured_image',
-        7 => 'send-trackbacks',
+        0 => 'custom_fields',
+        1 => 'discussion',
+        2 => 'comments',
+        3 => 'format',
+        4 => 'page_attributes',
+        5 => 'send-trackbacks',
     ),
 ));
 endif;
